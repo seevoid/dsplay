@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	ZeroFour by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A propos - DSPLAY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="left-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">DsPlay</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li class="current_page_item"><a href="index.html">Home</a></li>
+												<li>
+													<a href="index.html#prestations">Prestations</a>
+													<ul>
+														<li><a href="#">Site Web</a></li>
+														<li><a href="#">Développement logiciel</a></li>
+														<!--
+														<li>
+															<a href="#">Phasellus consequat</a>
+															<ul>
+																<li><a href="#">Lorem ipsum dolor</a></li>
+																<li><a href="#">Phasellus consequat</a></li>
+																<li><a href="#">Magna phasellus</a></li>
+																<li><a href="#">Etiam dolore nisl</a></li>
+															</ul>
+														</li>
+														-->
+														<li><a href="#">Design</a></li>
+													</ul>
+												</li>
+												<li><a href="equipe.html">Notre équipe</a></li>
+												<li><a href="contact.html">Nous contacter</a></li>
+												<li><a href="a_propos.html">A propos</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			
+				<div class="wrapper style3">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="12u 12u(mobile)" >
+
+							<!-- Content -->
+									<header class="major">
+										<h2>Nous contacter</h2>
+										<p>Restons en contact !</p>
+									</header>
+
+									<?php
+										$nom = $_POST['nom'] ;
+										$mailclient = $_POST['mail'] ;
+										$msg = $_POST['msg'] ;
+									?>
+
+									
+									<?php
+									     $to      = 'services.dsplay@gmail.com';
+									     $subject = 'le sujet';
+									     $message = 'Bonjour !';
+									     $headers = 'From: webmaster@example.com' . "\r\n" .
+									     'Reply-To: webmaster@example.com' . "\r\n" .
+									     'X-Mailer: PHP/' . phpversion();
+
+									     mail($to, $subject, $message, $headers);
+									 ?>
+
+
+
+									<p style:"white-space:nowrap;">Nous avons bien reçu votre message <b><?php echo $nom; ?></b> ! Nous vous recontacterons dans les plus bref délais.</p>
+									<p>Merci de votre confiance !</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+
+			<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<!-- About -->
+									<section>
+										<h2><strong>YO</strong> RIEN A DIRE</h2>
+										<p>TROUVER DES TRUCS A DIRE ..............................</p>
+										<a href="#" class="button alt icon fa-arrow-circle-right">Learn More</a>
+									</section>
+							
+
+							</div>
+							<div class="4u 12u(mobile)">
+								<!-- Contact -->
+									<section>
+										<h2>Suivez nous !</h2>
+													<dl class="contact">
+														<dt>Twitter</dt>
+														<dd><a href="#">@dsplay</a></dd>
+														<dt>Facebook</dt>
+														<dd><a href="#">facebook.com/dsplay</a></dd>
+														<dt>WWW</dt>
+														<dd><a href="#">https://www.dsplay.fr</a></dd>
+														<dt>Email</dt>
+														<dd><a href="#">services.dsplay@gmail.com</a></dd>
+													</dl>
+									</section>
+							</div>
+
+							<div class="4u 12u(mobile)">
+									<section>
+										<h2>Contact</h2>
+													<dl class="contact">
+														<dt>Addresss</dt>
+														<dd>
+															34 rue des frères Payraudeau<br />
+															85310, La Chaize le Vicomte<br />
+															France
+														</dd>
+														<dt>Telephone</dt>
+														<dd>+33664824783</dd>
+													</dl>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; DSPLAY. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
